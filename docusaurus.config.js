@@ -5,8 +5,8 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'hookdeck', // Usually your GitHub org/user name.
+  projectName: 'hookdeck-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Hookdeck',
