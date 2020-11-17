@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Hookdeck: ['introduction', 'doc2', 'doc3'],
+    Hookdeck: ['introduction', 'getting-started', 'doc3'],
     'Webhook Connections': ['doc4','doc5', 'doc6', 'doc7'],
     Events: ['doc8', 'doc9', 'doc10'],
     Workspace: ['doc11', 'doc12', 'doc13'], 
