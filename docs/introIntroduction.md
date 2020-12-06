@@ -19,7 +19,7 @@ Thanks to the reliability from decoupling the ingestion service and the delivery
 
 Hookdeck empowers you to monitor and troubleshoot webhooks from any API Provider. This is a revolutionary approach compared to building a custom solution to handle webhooks for each API provider.
 
-![hookdeck_infrastructure](../static/img/Hookdeck_Infrastructure.png)
+![hookdeck_infrastructure](../static/img/Intro/Hookdeck_Infrastructure.png)
 
 ---
 
@@ -31,7 +31,7 @@ Developers can now focus on providing more value for your customers instead of m
 - Setup your webhooks connection:  Replace the destination endpoint with Hookdeck's URL at the Source. Send a test event from the Web App or from the API provider.
 - Monitor your webhooks connection: Receive an alert when there's an error and troubleshoot within the webapp.
 
-![hookdeck_infrastructure](../static/img/Hookdeck_Setup.png)
+![hookdeck_infrastructure](../static/img/Intro/Hookdeck_Setup.png)
 
 ---
 

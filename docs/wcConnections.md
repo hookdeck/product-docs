@@ -1,4 +1,4 @@
 ---
-id: doc4
-title: Creating and updating connections 
+id: creating-and-updating-connections
+title: Creating and updating connections
 ---
