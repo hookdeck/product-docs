@@ -85,9 +85,9 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Hookdeck, Inc.`,
     },
   },
-  scripts: [
-    '/docs/src/scripts/loadSegment.js',
-    '/docs/src/scripts/loadCrisp.js',
+  clientModules: [
+    require.resolve('./src/scripts/loadSegment.js'),
+    require.resolve('./src/scripts/loadCrisp.js'),
   ],
   presets: [
     [
