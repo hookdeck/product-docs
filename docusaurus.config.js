@@ -85,6 +85,10 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Hookdeck, Inc.`,
     },
   },
+  scripts: [
+    '/src/scripts/loadSegment.js',
+    '/src/scripts/loadCrisp.js',
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
