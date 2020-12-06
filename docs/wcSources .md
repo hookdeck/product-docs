@@ -20,17 +20,17 @@ If you want a specfic API provider to work with Hookdeck. [Send us a message, we
 ## Create a Source
 
 To create a Source follow these two steps:
-![Hookdeck_Create_A_Source](../static/img/webhookConnections/wcSource/create_a_source_1.png)
+![Hookdeck_Create_A_Source](../static/img/webhook-connections/wcSource/create_a_source_1.png)
 
 ## Edit a Source
 
 You can edit a Source by following these two steps:
 
 _Step 1_
-![Hookdeck_Update_A_Source_1](../static/img/webhookconnections/wcSource/update_a_source_1.png)
+![Hookdeck_Update_A_Source_1](../static/img/webhook-connections/wcSource/update_a_source_1.png)
 
 _Step 2_
-![Hookdeck_Update_A_Source_2](../static/img/webhookconnections/wcSource/update_a_source_2.png)
+![Hookdeck_Update_A_Source_2](../static/img/webhook-connections/wcSource/update_a_source_2.png)
 
 :::note
 After editing a Source, it will also update the Source of linked events.
@@ -44,8 +44,8 @@ You have the option to archive a Source you do not use anymore.
 You can only archive Sources that are not linked with any webhook connections.
 :::
 
-![Hookdeck_Archive_A_Source](../static/img/webhookconnections/wcSource/archive_a_source_1.png)
+![Hookdeck_Archive_A_Source](../static/img/webhook-connections/wcSource/archive_a_source_1.png)
 
 You can easily unarchive a Source if you decide to want to use it again.
 
-![Hookdeck_Unarchive_A_Source](../static/img/webhookconnections/wcSource/archive_a_source_2.png)
+![Hookdeck_Unarchive_A_Source](../static/img/webhook-connections/wcSource/archive_a_source_2.png)
