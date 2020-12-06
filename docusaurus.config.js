@@ -2,7 +2,7 @@ module.exports = {
   title: "Hookdeck | Product Docs", // TODO: Update
   tagline: "Product documentation for hookdeck.io", // TODO: Update
   url: 'https://hookdeck.io/docs',
-  baseUrl: "/",
+  baseUrl: "/docs/",
   onBrokenLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "hookdeck",
