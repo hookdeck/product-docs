@@ -97,7 +97,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           editUrl:
-            "https://github.com/hookdeck/product-docs/edit/master/website/",
+            "https://github.com/hookdeck/product-docs/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
