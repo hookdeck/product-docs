@@ -1,69 +1,79 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
-  organizationName: 'hookdeck', // Usually your GitHub org/user name.
-  projectName: 'hookdeck-docs', // Usually your repo name.
+  title: "My Site", // TODO: Update
+  tagline: "The tagline of my site", // TODO: Update
+  url: 'https://hookdeck.io/docs',
+  baseUrl: "/docs",
+  onBrokenLinks: "throw",
+  favicon: "img/favicon.ico",
+  organizationName: "hookdeck",
+  projectName: "hookdeck-docs",
+  favicon: 'https://v2.docusaurus.io/favicon.ico',
   themeConfig: {
     navbar: {
-      title: 'Hookdeck',
+      hideOnScroll: true,
       logo: {
-        alt: 'HookdeckLogo',
-        src: 'img/logo.svg',
+        alt: "Hookdeck Logo",
+        srcDark: "img/logo-docs-light.svg",
+        src: "img/logo-docs.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          href: "https://hookdeck.io",
+          label: "Home",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://docs.hookdeck.io/",
+          label: "API",
+          position: "left",
+        },
+        {
+          href: "https://hookdeck.io/blog/",
+          label: "Blog",
+          position: "left",
+        },
+        {
+          href: "https://hookdeck.io",
+          label: "Community",
+          position: "left",
         },
       ],
     },
     footer: {
-      style: 'light',
+      style: "light",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Style Guide",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Second Doc",
+              to: "docs/doc2/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Spectrum',
-              href: 'https://spectrum.chat/hookdeck',
-            }
+              label: "Spectrum",
+              href: "https://spectrum.chat/hookdeck",
+            },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
@@ -73,22 +83,23 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/", // Set this value to '/'.
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

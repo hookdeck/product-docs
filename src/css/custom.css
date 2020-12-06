@@ -8,13 +8,102 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #3578e5;
-  --ifm-color-primary-dark: #1d68e1;
-  --ifm-color-primary-darker: #1b62d4;
-  --ifm-color-primary-darkest: #1751af;
-  --ifm-color-primary-light: #4e89e8;
-  --ifm-color-primary-lighter: #5a91ea;
-  --ifm-color-primary-lightest: #80aaef;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary-lightest: #f7f8fc;
+  --ifm-color-gray-300: #edeef0;
+  --ifm-color-emphasis-300: var(--ifm-color-gray-300);
+  --ifm-hr-border-color: var(--ifm-color-gray-300);
+
+  --ifm-navbar-shadow: unset;
+  --ifm-navbar-padding-horizontal: 1.5rem;
+
+  --ifm-color-primary: #3578e5;
+  --ifm-color-secondary: #ebedf0;
+  --ifm-color-success: #27ae60;
+  --ifm-color-info: #2f80ed;
+  --ifm-color-warning: #f2994a;
+  --ifm-color-danger: #eb5757;
+
+  --ifm-color-gray-0: var(--ifm-color-white);
+  --ifm-color-gray-100: #f5f6f7;
+  --ifm-color-gray-200: #ebedf0;
+  --ifm-color-gray-300: #dadde1;
+  --ifm-color-gray-400: #ccd0d5;
+  --ifm-color-gray-500: #bec3c9;
+  --ifm-color-gray-600: #8d949e;
+  --ifm-color-gray-700: #606770;
+  --ifm-color-gray-800: #444950;
+  --ifm-color-gray-900: #121212;
+  --ifm-color-gray-1000: var(--ifm-color-black);
+}
+
+:root[data-theme="dark"] {
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-color-gray-100: #f5f6f7;
+  --ifm-color-gray-200: #ebedf0;
+  --ifm-color-gray-300: #dadde1;
+  --ifm-color-gray-400: #ccd0d5;
+  --ifm-color-gray-500: #bec3c9;
+  --ifm-color-gray-600: #8d949e;
+  --ifm-color-gray-700: rgb(48, 50, 54);
+  --ifm-color-gray-800: #444950;
+  --ifm-color-gray-900: rgb(40, 41, 44);
+  --ifm-background-color: rgb(31, 32, 35);
+  --ifm-hr-border-color: var(--ifm-color-gray-700);
+  --ifm-blockquote-color: var(--ifm-color-gray-300);
+
+
+}
+
+hr {
+  height: 1px;
+  border: none;
+  width: 100%;
+  background-color: var(--ifm-hr-border-color);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.navbar__logo {
+  height: 84%;
+}
+
+.alert {
+  --ra-admonition-icon-color: var(--ifm-color-emphasis-800);
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-800);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-width: 2px;
+}
+
+.alert--secondary {
+  --ifm-alert-border-color: var(--ifm-color-emphasis-400);
+}
+
+
+.admonition-icon {
+  margin-right: 0.6em;
+}
+
+.table-of-contents {
+  font-size: 1em;
+}
+
+.table-of-contents::before {
+  content: "ON THIS PAGE";
+  font-size: 0.7em;
+  font-weight: bold;
+  color: var(--ifm-toc-link-color);
+  margin-left: 0.65em;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
 }
 
 .docusaurus-highlight-code-line {

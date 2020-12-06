@@ -7,7 +7,7 @@ title: Sources
 
 A source componenet is a simply a label you give to an API provider.
 
-:::tip
+:::note
 Be as descriptive as possible, it will help you keep track of your sources!
 :::
 
