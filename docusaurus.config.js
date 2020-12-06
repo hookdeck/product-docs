@@ -1,13 +1,12 @@
 module.exports = {
-  title: "My Site", // TODO: Update
-  tagline: "The tagline of my site", // TODO: Update
+  title: "Hookdeck | Product Docs", // TODO: Update
+  tagline: "Product documentation for hookdeck.io", // TODO: Update
   url: 'https://hookdeck.io/docs',
-  baseUrl: "/docs",
+  baseUrl: "/docs/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
   organizationName: "hookdeck",
   projectName: "hookdeck-docs",
-  favicon: 'https://v2.docusaurus.io/favicon.ico',
   themeConfig: {
     navbar: {
       hideOnScroll: true,
@@ -33,9 +32,14 @@ module.exports = {
           position: "left",
         },
         {
-          href: "https://hookdeck.io",
+          href: "https://spectrum.chat/hookdeck",
           label: "Community",
           position: "left",
+        },
+        {
+          href: "https://dashboard.hookdeck.io",
+          label: "Sign In",
+          position: "right",
         },
       ],
     },
@@ -73,12 +77,12 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/hookdeck/product-docs",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hookdeck, Inc.`,
     },
   },
   presets: [
@@ -87,17 +91,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          routeBasePath: "/", // Set this value to '/'.
-          // Please change this to your repo.
+          routeBasePath: "/",
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/hookdeck/product-docs/edit/master/website/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
