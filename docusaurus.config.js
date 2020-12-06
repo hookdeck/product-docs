@@ -86,8 +86,8 @@ module.exports = {
     },
   },
   scripts: [
-    '/src/scripts/loadSegment.js',
-    '/src/scripts/loadCrisp.js',
+    '/docs/src/scripts/loadSegment.js',
+    '/docs/src/scripts/loadCrisp.js',
   ],
   presets: [
     [
