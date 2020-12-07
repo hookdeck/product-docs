@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    'Get Started': ['introduction', 'getting-started', 'using-the-api'],
+    'Get Started': ['introduction', 'get-started', 'using-the-api'],
     'Webhook Connections': ['creating-and-updating-connections','sources', 'destinations', 'rulesets'],
     Events: ['doc8', 'doc9', 'doc10'],
     Workspace: ['doc11', 'doc12', 'doc13'], 
