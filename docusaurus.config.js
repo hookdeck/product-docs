@@ -47,33 +47,45 @@ module.exports = {
       style: "light",
       links: [
         {
-          title: "Docs",
+          title: "Product",
           items: [
             {
-              label: "Style Guide",
-              to: "docs/",
+              label: "Pricing",
+              href: "https://hookdeck.io/pricing",
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2/",
+              label: "For Production",
+              href: "https://hookdeck.io/for-production",
+            },
+            {
+              label: "For Development",
+              href: "https://hookdeck.io/for-development",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Resources",
           items: [
             {
-              label: "Spectrum",
+              label: "API Docs",
+              href: "https://docs.hookdeck.io",
+            },
+            {
+              label: "Community",
               href: "https://spectrum.chat/hookdeck",
             },
           ],
         },
         {
-          title: "More",
+          title: "Company",
           items: [
             {
               label: "Blog",
-              to: "blog",
+              href: "https://hookdeck.io/blog",
+            },
+            {
+              label: "Contact Us",
+              href: "https://hookdeck.io/contact-us",
             },
             {
               label: "GitHub",
