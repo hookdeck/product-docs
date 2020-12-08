@@ -78,15 +78,11 @@ _Github Webhooks UI_
 
 ## Validate the connection
 
-After replacing the endpoint for Hookdeck's URL. Trigger an action to validate the webhook connection.
+After replacing the endpoint for Hookdeck's URL. Trigger an action in your source to validate the webhook connection.
 
 :::info
 You can send a test event from Hookdeck's dashboard
 :::
-
-_For our example project, we validated the connection by sending a test event._
-
-![Hookdeck_Event_Testing](../static/img/Intro/Hookdeck_EventTesting.png)
 
 _Our first event! 🎉_
 

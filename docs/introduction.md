@@ -13,15 +13,15 @@ Hookdeck is a develoment and production service to provides developers with all 
 
 ## What's a webhook infrastructure?
 
-Generally speaking, when dealing with large volume of webhooks, the best pratices recommend that you build and implement a webhook ingestion infrastructure. The idea of this infrastructure is to delay the processing of webhooks to a later point in time through the use of queues. The is done to be able to handle large spikes in webhooks as you do not have control over the rate at which you receive webhooks and their content.
+When dealing with large volume of webhooks, the best pratices recommend that you build and implement a webhook ingestion infrastructure. The idea of this infrastructure is to delay the processing of webhooks to a later point in time through the use of queues. The is done to be able to handle large spikes in webhooks as you do not have control over the rate at which you receive webhooks and their content.
 
-Generally speaking the typical infrastructure will feature a ingestion service (AWS Lamba, Cloud Run, etc.), file storage (S3, Cloud Storage, etc.), a queue (SQS, PubSub, RambitMQ, etc.), a set of workers a monitoring tool and a scheduler. However, Hookdeck on it's own implements all these services into a single product that's plug and play. Hookdeck has built-in support for throlling delivery, handling large volume of webhooks, custom retry and alerting logic amongst other things.
+A the typical infrastructure will feature a ingestion service (AWS Lamba, Cloud Run, etc.), file storage (S3, Cloud Storage, etc.), a queue (SQS, PubSub, RambitMQ, etc.), a set of workers a monitoring tool and a scheduler. However, Hookdeck on it's own implements all these services into a single product that's plug and play. Hookdeck has built-in support for throlling delivery, storing payloads, handling large volume of webhook events, retring webhook events and alerting logic amongst other things.
 
 We generally recommend taking action directly on webhook receive trough Hookdeck instead of queing the message like you otherwise would. Hookdeck implements all the logic you need to safely handle webhooks and recover from errors. You **do not need** to build any additional infrastructure.
 
 Hookdeck empowers you to monitor and troubleshoot webhooks from any API Provider. This is a much less complex approach compared to building a custom solution to handle webhooks for each API provider.
 
-![hookdeck_infrastructure](../static/img/Intro/Hookdeck_Infrastructure.png)
+![hookdeck_infrastructure](../static/img/intro/hookdeck-infra.png)
 
 ---
 
