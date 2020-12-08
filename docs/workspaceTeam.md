@@ -1,4 +1,5 @@
 ---
-id: doc12
-title: Managing your team
+id: manage-deck-members
+title: Adding team members
 ---
+
