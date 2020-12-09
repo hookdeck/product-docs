@@ -9,7 +9,7 @@ Instead of using Hookdeck's UI, you can leverage the REST API. Everything done i
 
 ## How to use the API
 
-It's considered best practice to configure your webhook connections with the API. Many features, like the [`Connection Event Filters`](connection-filters) can be version controlled within your code when create an updating connections from your server. It's also very useful to integrate Hookdeck in your CD & CI workflow
+It's considered best practice to configure your webhook connections with the API. Many features, like the [`Connection Event Filters`](connection-filters) can be version controlled within your code when creating and updating connections from your server. It's also very useful to integrate Hookdeck in your CD & CI workflow
 
 ### Examples
 
@@ -17,7 +17,7 @@ The following examples are in Javascript using **Axios** for HTTP requests.
 
 #### Creating a connection
 
-Generally speaking when starting your server, you want to make sure your webhook endpoints are properly configured in Hookdeck. You can programatically create your connection to do so.
+When starting your server, you would want to make sure your webhook endpoints are properly configured in Hookdeck. You can programmatically create your connection to do so.
 
 ```javascript
 Axios.post("https://api.hookdeck.io/webhooks", {
