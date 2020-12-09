@@ -25,14 +25,14 @@ There is two ways to create a webhook connection:
 - Using the API
 
 :::note
-For our example project, we will be using the first method by leveraging the right-hand side of the screen to create a source, a destination and a ruleset.
+For our example project, we will be using the first method by leveraging the right-hand side of the screen to create  [`Source`](sources), a [`Destination`](destinations) and a ruleset.
 :::
 
 The onboarding will guide your through creating your first webhook connection.
 
-### Create a Source
+### Create A Source
 
-A source is a representation of the service your are planning on receiving your webhooks from. That could be Shopify, Github, Olark, Stripe or any other service.
+A [`Source`](sources) is a representation of the service your are planning on receiving your webhooks from. That could be Shopify, Github, Olark, Stripe or any other service.
 
 _For our example project, we will create a Github Source._
 
@@ -40,7 +40,7 @@ _For our example project, we will create a Github Source._
 
 ### Create a Destination
 
-A destination is a representation of your own API where the webhooks will be delivered. Each destination requires a HTTP URL that will receive a POST request with a JSON body payload. Each webhook event will also cont
+A [`Destination`](destinations) is a representation of your own API where the webhooks will be delivered. Each destination requires a HTTP URL that will receive a POST request with a JSON body payload. Each webhook event will also cont
 
 _For our example project, we will create a Hookdeck Mock Destination._
 
@@ -64,7 +64,7 @@ _For our example project, we will use the Default Ruleset that will retry every 
 
 ## Update the endpoint in the Source
 
-Hookdeck generates a unique URL for each `source`. Replace your current endpoint in your `Source` with Hookdeck's URL.
+Hookdeck generates a unique URL for each [`Source`](sources). Replace your current endpoint in your [`Source`](sources) with Hookdeck's URL.
 
 _For our example project, I will update the URL in the config of my GitHub webhook._
 

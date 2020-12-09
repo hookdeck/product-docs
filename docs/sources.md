@@ -5,9 +5,9 @@ title: Sources
 
 ## What is a Source
 
-A `Source` is used to define the sender of your webhooks. Generally this will be labeled after the platform you are using such as Shopify, Github, Intercom, etc.
+A [`Source`](sources) is used to define the sender of your webhooks. Generally this will be labeled after the platform you are using such as Shopify, Github, Intercom, etc.
 
-Each `Source` is associated a Webhook URL that can be copy & paste as your URL in the sender platform.
+Each [`Source`](sources) is associated a Webhook URL that can be copy & paste as your URL in the sender platform.
 
 :::note
 Be as descriptive as possible, it will help you keep track of your webhook events!
@@ -25,7 +25,7 @@ Some API providers require a _validation_ step. While this is not standard acros
 
 ## Create a Source
 
-A `Source` can be created while creating a new `Webhook Connection`
+A [`Source`](sources) can be created while creating a new `Webhook Connection`
 
 ![Create a Source](../static/img/connections/create-source.png)
 
@@ -36,14 +36,14 @@ A `Source` can be created while creating a new `Webhook Connection`
 
 ## Edit a Source
 
-You can edit a source via the _options_ menu next to the source label.
+You can edit A [`Source`](sources) via the _options_ menu next to the source label.
 
 ![Update a Source](../static/img/connections/update-source.png)
 
 :::note
-After editing a `Source` label, all the your webhook connections with default labels will be updated to reflect the change. The webhook URL will not change by updating a source.
+After editing a [`Source`](sources) label, all the your webhook connections with default labels will be updated to reflect the change. The webhook URL will not change by updating A [`Source`](sources).
 :::
 
 ## Archive a Source
 
-`Source` can be archived via the API, see the API docs to learn more. This option will be added to the UI in a future release.
+[`Source`](sources) can be archived via the API, see the API docs to learn more. This option will be added to the UI in a future release.

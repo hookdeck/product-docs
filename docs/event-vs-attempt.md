@@ -23,7 +23,7 @@ If you have multiple webhook connections for your source, for each webhook we wi
 
 ## What's an attempt?
 
-For each Event, an intial attempt is made to deliver the request to your `Destination`. If the request is succesful or the retry strategy is disabled, your event will only have a single attempt.
+For each Event, an intial attempt is made to deliver the request to your [`Destination`](destinations). If the request is succesful or the retry strategy is disabled, your event will only have a single attempt.
 
 Alternatively new attempts will be made over time according to your retry strategy. Any given event can have up to 50 attempts. Each attempt can be browsed within the Event List by clicking any given event or by going directly to the page.
 

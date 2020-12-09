@@ -5,9 +5,9 @@ title: Destinations
 
 ## What's a Destination
 
-A `Destination` is used to define the URL where of your webhooks should be sent. Generally this will be labeled after the our service or a specific method on your service for exmaple: "Order Service", "Internal API" or "Update Order".
+A [`Destination`](destinations) is used to define the URL where of your webhooks should be sent. Generally this will be labeled after the our service or a specific method on your service for exmaple: "Order Service", "Internal API" or "Update Order".
 
-Each `Destination` has Webhook URL which is the endpoint Hookdeck will be sending HTTP `POST` requests. The original request headers and data is preserved but Hookdeck will also append additional meta data to the request.
+Each [`Destination`](destinations) has Webhook URL which is the endpoint Hookdeck will be sending HTTP `POST` requests. The original request headers and data is preserved but Hookdeck will also append additional meta data to the request.
 
 :::note
 Be as descriptive as possible, it will help you keep track of your webhook events!
@@ -80,7 +80,7 @@ If you run into problems with the 30 seconds timeout, please reach out to us to 
 
 ## Create a Destinaton
 
-To create a Destination follow these two steps:
+To create a [`Destination`](destinations) follow these two steps:
 
 ![Create a destination](../static/img/connections/create-destination.png)
 
@@ -90,17 +90,17 @@ A new destination can also be created when creating a new `Webhook Connection`
 
 ## Edit a Destination
 
-You can edit a Destination by selecting the the edit button from the destination card options menu:
+You can edit a [`Destination`](destinations) by selecting the the edit button from the destination card options menu:
 
 ![Edit a destination](../static/img/connections/update-destination.png)
 
 :::info
-After editing a Destination ULR, all pending and new webhook events will now be sent to that URL
+After editing a [`Destination`](destinations) ULR, all pending and new webhook events will now be sent to that URL
 :::
 
 ## Archive a Destination
 
-You have the option to archive a Destination you do not use anymore.
+You have the option to archive a [`Destination`](destinations) you do not use anymore.
 
 :::note
 You can only archive Destination that is not linked with any webhook connections.
@@ -108,6 +108,6 @@ You can only archive Destination that is not linked with any webhook connections
 
 ![Hookdeck_Archive_A_Destination](../static/img/connections/archive-destination.png)
 
-You can unarchive a Destination if you decide to want to use it again.
+You can unarchive a [`Destination`](destinations) if you decide to want to use it again.
 
 ![Hookdeck_Unarchive_A_Destination](../static/img/connections/unarchive-destination.png)

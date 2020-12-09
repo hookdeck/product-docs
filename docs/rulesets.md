@@ -5,7 +5,7 @@ title: Rulesets
 
 ## What is a Ruleset?
 
-A `Ruleset` defines the retry logic and alert logic for your webhook connection. A Ruleset has a label, a retry strategy and an alert strategy.
+A [`Ruleset`](rulesets) defines the retry logic and alert logic for your webhook connection. A Ruleset has a label, a retry strategy and an alert strategy.
 
 The retry logic is composed of two elements:
 
@@ -51,7 +51,7 @@ A new destination can also be created when creating a new `Webhook Connection`
 
 ## Edit a Ruleset
 
-You can edit a Destination by selecting the the edit button from the destination card options menu:
+You can edit a [`Destination`](destinations) by selecting the the edit button from the destination card options menu:
 
 ![Edit a ruleset](../static/img/connections/update-ruleset.png)
 
@@ -64,7 +64,7 @@ Editing a Ruleset retry strategy, will only impact future event attempts. The cu
 You have the option to archive a Rule you do not use anymore.
 
 :::note
-You can only archive Ruleset that is not linked with any webhook connections.
+You can only archive [`Ruleset`](rulesets) that is not linked with any webhook connections.
 :::
 
 ![Archive a Ruleset](../static/img/connections/archive-ruleset.png)

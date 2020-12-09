@@ -29,16 +29,16 @@ Hookdeck empowers you to monitor and troubleshoot webhooks from any API Provide
 
 Hookdeck works by proxing your webhooks through our own infrastructure. You can now focus on providing more value for your customers instead of maintaining a custom backend infrastructure.
 
-Webhook connections are defined by their `source`, `destination` and `ruleset`.
+Webhook connections are defined by their [`Source`](sources), [`Destination`](destinations) and [`Ruleset`](rulesets).
 
-- A `source` represent an API sending you a webhook, such as Shopify, Stripe, Github etc. Each source is assigned a unique *Webhook URL* that can be provided to the sender.
+- A [`Source`](sources) represent an API sending you a webhook, such as Shopify, Stripe, Github etc. Each source is assigned a unique *Webhook URL* that can be provided to the sender.
 
-- A `destination` represent an endpoint on your own server. Hookdeck will be forwarding all webhooks received to that URL with a HTTP POST request containing the original data from the sender along with additional Hookdeck metadata.
+- A [`Destination`](destinations) represent an endpoint on your own server. Hookdeck will be forwarding all webhooks received to that URL with a HTTP POST request containing the original data from the sender along with additional Hookdeck metadata.
 
-- A `ruleset` is a reusable component across your connection to specifiy what retry logic and alerting logic to apply to your webhook connection.
+- A [`Ruleset`](rulesets) is a reusable component across your connection to specifiy what retry logic and alerting logic to apply to your webhook connection.
 
 
-Hookdeck will ingest any HTTP POST request to your `source` *Webhook URL*  and forward them to your destination url.
+Hookdeck will ingest any HTTP POST request to your [`Source`](sources) *Webhook URL*  and forward them to your destination url.
 
 
 ![hookdeck_infrastructure](../static/img/Intro/Hookdeck_Setup.png)
