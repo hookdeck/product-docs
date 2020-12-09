@@ -4,7 +4,9 @@ import loadSegment from "./loadSegment";
 if (ExecutionEnvironment.canUseDOM) {
   loadCrisp();
   loadSegment();
-  fetch("https://api.hookdeck.io/session/me")
+  fetch("https://api.hookdeck.io/session/me", {
+    credentials: 'include'
+  })
     .then((r) => r.json())
     .then((user) => {
       if (window.analytics) {
