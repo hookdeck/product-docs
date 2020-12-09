@@ -1,11 +1,11 @@
 ---
 id: browsing-event
-title: Browsing events
+title: Browsing Events
 ---
 
 ## Events list
 
-The event list displays the historical record of your events by descending order. Each even can be selected to preview the event request data and the reponse data. By default, when selecting an even, the most recent attempt is used to populate the response data but any other attempt can also be selected.
+The event list displays the historical record of your events in descending order. Each event can be selected to preview the event request data and response data. By default, when selecting an event, the most recent attempt is used to populate the response data. You can also select any of the other attempts.
 
 ![Webhook event history list](../static/img/events/event-list.jpg)
 
@@ -26,11 +26,11 @@ You can sort events by:
 
 ### Paging
 
-The event list display up to 50 events at any given time, you can travel back and forth in time but using the `Previous` and `Next` buttons at the bottom of the list. Because Hookdeck uses cursor pagination, navigating betwen pages will not be impacted by new incomming events, event with live update turned on.
+The event list displays up to 50 events at any given time. You can travel back and forth using the `Previous` and `Next` buttons at the bottom of the list. Hookdeck uses cursor pagination thus navigating between pages will not be impacted by new incoming events when the live update is turned on.
 
 ## Inspect request and response
 
-Inspecting event request data and attempt response data is very practical to troubleshoot issues. For each event for the request `Headers` and `Body` is provided either as plan text or JSON. For the attempt the Status Code and the response `Body` is displayed.
+Inspecting event request data and attempt response data is very practical to troubleshoot issues. For each event, the request `Headers` and `Body` are provided either as plain text or JSON. For the attempt, the Status Code and the response `Body` is displayed.
 
 :::tip
 You can open the JSON documents in fullscreen!
@@ -40,19 +40,18 @@ You can open the JSON documents in fullscreen!
 
 ### HTTP response codes
 
-When you destination respon with a valid HTTP response code, it's displayed as the status.
+When your destination responds with a valid HTTP response code, it will be displayed as the status.
 
-A response code within 2XX is considered succesful, a status code above 4XX is considered a failure.
+A response code within 2XX is considered successful while a status code above 4XX is considered a failure.
 
 ### Error codes
 
-If your destination was unreachable or failed to respond you will see the `ERR` code. A more specific error code can be found by clicking on the event.
+If your destination was unreachable or failed to respond, you will see the `ERR` code. A more specific error code can be found by clicking on the event.
 
 The possible codes are:
 
-- **CONNECTION_REFUSED**: The request to your destination could not be made because the connection was refused
+- **CONNECTION_REFUSED**: The request to your destination could not be made because the connection was refused.
 - **CONNECTION_RESET**: The request to your destination could not be made because the connection was forcibly closed by your server.
-  break;
-- **NOT_FOUND**: The request to your destination could not be made because the domain or host was not found or unavailable.;
-- **TIMEOUT**: The request to your destination exceeded the 30 seconds timeout. The request might have still been processed on your destination.
-- **UNKNOWN**: A uncategorized error occured. If one those error is triggered, the technical team is notified and will investigate the situation.
+- **NOT_FOUND**: The request to your destination could not be made because the domain or host was not found or unavailable.
+- **TIMEOUT**: The request to your destination exceeded the 30 seconds timeout. The request might have still been processed by your destination.
+- **UNKNOWN**: A uncategorized error occurred. If one of these errors is triggered, the technical team is notified and will investigate the situation.
