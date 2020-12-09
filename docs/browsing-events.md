@@ -7,6 +7,8 @@ title: Browsing events
 
 The event list displays the historical record of your events by descending order. Each even can be selected to preview the event request data and the reponse data. By default, when selecting an even, the most recent attempt is used to populate the response data but any other attempt can also be selected.
 
+![Webhook event history list](../static/img/events/event-list.jpg)
+
 ### Filtering & Sorting
 
 You can filter events by:

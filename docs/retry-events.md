@@ -9,6 +9,8 @@ Manually retrying a webhook event is useful when troubleshooting, testing or aft
 
 If a manually retry is succesful, the `Next Attempt At` will be cleared (if there was any). Otherwise, if the retry result in an error, the `Next Attempt At` will **NOT** be affected.
 
+![Manual Retry a webhook event](../static/img/events/manual-retry.png)
+
 ## Automatic retries
 
 Automatic retry can be configured with a [Ruleset](rulesets) `Max Retry Count` and `Retry Interval` properties.
@@ -25,4 +27,6 @@ You can retry multiple events using the API, [see how!](bulk-retries).
 
 ## Cancel Scheduled Retry
 
-A scheduled automatic retry can be cancelled within the event list.
+A scheduled automatic retry can be cancelled within the event list, the `Next Attempt At` will be unset.
+
+![Cancel Retry a webhook event](../static/img/events/cancel-retry.png)

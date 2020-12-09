@@ -33,6 +33,9 @@ Alternatively new attempts will be made over time according to your retry strate
 
 Each attempt also as an associated `Attempt Response` that contains the `HTTP Status` and `Body` of the server response.
 
+![Attempts example](../static/img/events/attempts-example.png)
+
+
 ### Error codes
 
 If your destination was unreachable or failed to respond you will see the `ERR` code. A more specific error code can be found by clicking on the event.
