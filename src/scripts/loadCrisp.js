@@ -1,5 +1,4 @@
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-if (ExecutionEnvironment.canUseDOM) {
+export default () => {
   window.$crisp = [];
   window.CRISP_WEBSITE_ID = "a5e808e8-1191-4809-ac65-adcf72135cef";
   (function () {
@@ -8,4 +7,4 @@ if (ExecutionEnvironment.canUseDOM) {
     s.async = 1;
     document.getElementsByTagName("head")[0].appendChild(s);
   })();
-}
+};

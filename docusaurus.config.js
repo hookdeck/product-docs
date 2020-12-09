@@ -1,13 +1,14 @@
 module.exports = {
   title: "Hookdeck | Product Docs", // TODO: Update
   tagline: "Product documentation for hookdeck.io", // TODO: Update
-  url: 'https://hookdeck.io/docs',
+  url: "https://hookdeck.io/docs",
   baseUrl: "/docs/",
   onBrokenLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "hookdeck",
   projectName: "hookdeck-docs",
   themeConfig: {
+    respectPrefersColorScheme: true,
     navbar: {
       hideOnScroll: true,
       logo: {
@@ -97,10 +98,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Hookdeck, Inc.`,
     },
   },
-  clientModules: [
-    require.resolve('./src/scripts/loadSegment.js'),
-    require.resolve('./src/scripts/loadCrisp.js'),
-  ],
+  clientModules: [require.resolve("./src/scripts/tracking.js")],
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -108,8 +106,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
-          editUrl:
-            "https://github.com/hookdeck/product-docs/edit/master/",
+          editUrl: "https://github.com/hookdeck/product-docs/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
