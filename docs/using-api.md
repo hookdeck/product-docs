@@ -9,7 +9,7 @@ Instead of using Hookdeck's UI, you can leverage the REST API. Everything done i
 
 ## How to use the API
 
-It's considered best practice to configure your webhook connections with the API. Many features, like the [`Event Filters`](event-filters) can be version controlled within your code when create an updating connections from your server. It's also very useful to integrate Hookdeck in your CD & CI workflow
+It's considered best practice to configure your webhook connections with the API. Many features, like the [`Connection Event Filters`](connection-filters) can be version controlled within your code when create an updating connections from your server. It's also very useful to integrate Hookdeck in your CD & CI workflow
 
 ### Examples
 
@@ -42,7 +42,7 @@ Axios.post("https://api.hookdeck.io/webhooks", {
 
 #### Version control your Event Filters
 
-[`Event Filters`](event-filters) are a powerful feature of Hookdeck to only receive meaningful events.
+[`Connection Event Filters`](connection-filters) are a powerful feature of Hookdeck to only receive meaningful events.
 
 ```javascript
 // Receive only events when Shopify product inventory is now 0 (product sold out)
