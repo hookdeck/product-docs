@@ -87,6 +87,11 @@ hr {
   border-width: 2px;
 }
 
+.alert a {
+  color: var(--ifm-color-primary);
+
+}
+
 .alert--secondary {
   --ifm-alert-border-color: var(--ifm-color-emphasis-400);
 }

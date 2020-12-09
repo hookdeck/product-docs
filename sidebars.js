@@ -9,7 +9,7 @@ module.exports = {
       "connection-filters",
     ],
     "Webhook Events": ["event-vs-attempt", "browsing-event", "retry-events"],
-    Decks: ["manage-decks", "manage-deck-members"],
+    // Decks: ["manage-decks", "manage-deck-members"],
     "Best Practices": [
       "signature-verification",
       "async-vs-sync",
