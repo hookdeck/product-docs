@@ -18,5 +18,6 @@ if (ExecutionEnvironment.canUseDOM) {
         window.$crisp.push(["set", "user:email", [user.email]]);
         window.$crisp.push(["set", "user:nickname", [user.name]]);
       }
-    });
+    })
+    .catch(() => null);
 }
