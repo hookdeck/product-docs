@@ -36,7 +36,7 @@ A [`Source`](sources) is a representation of the service your are planning on re
 
 _For our example project, we will create a Github Source._
 
-![create-source](../static/img/intro/create-source.png)
+![create-source](../static/img/introduction/create-source.png)
 
 ### Create a Destination
 
@@ -44,7 +44,7 @@ A [`Destination`](destinations) is a representation of your own API where the we
 
 _For our example project, we will create a Hookdeck Mock Destination._
 
-![create-destination](../static/img/intro/create-destination.png)
+![create-destination](../static/img/introduction/create-destination.png)
 
 ### Create a Ruleset
 
@@ -59,7 +59,7 @@ Each workspace has a Default Ruleset that's configured with sensible defaults.
 
 _For our example project, we will use the Default Ruleset that will retry every hour minutes up to 5 times. It will send an email alert for the last failure, with up to 1 email per hour._
 
-![create-ruleset](../static/img/intro/create-ruleset.png)
+![create-ruleset](../static/img/introduction/create-ruleset.png)
 
 
 ## Update the endpoint in the Source
@@ -68,11 +68,11 @@ Hookdeck generates a unique URL for each [`Source`](sources). Replace your curre
 
 _For our example project, I will update the URL in the config of my GitHub webhook._
 
-![copy-url](../static/img/intro/copy-url.png)
+![copy-url](../static/img/introduction/copy-url.png)
 
 _Github Webhooks UI_
 
-![paste-url-github](../static/img/intro/github-url.png)
+![paste-url-github](../static/img/introduction/github-url.png)
 
 ---
 
@@ -86,7 +86,7 @@ You can send a test event from Hookdeck's dashboard
 
 _Our first event! 🎉_
 
-![Hookdeck_Event_Test](../static/img/Intro/Hookdeck_TestEvent.png)
+![Hookdeck_Event_Test](../static/img/introduction/hookdeck-test-event.png)
 
 ---
 

@@ -21,7 +21,7 @@ We generally recommend taking action directly on webhook receive trough Hookdeck
 
 Hookdeck empowers you to monitor and troubleshoot webhooks from any API Provider. This is a much less complex approach compared to building a custom solution to handle webhooks for each API provider.
 
-![hookdeck_infrastructure](../static/img/intro/hookdeck-infra.png)
+![hookdeck_infrastructure](../static/img/introduction/hookdeck-infra.png)
 
 ---
 
@@ -41,7 +41,7 @@ Webhook connections are defined by their [`Source`](sources), [`Destination`](de
 Hookdeck will ingest any HTTP POST request to your [`Source`](sources) *Webhook URL*  and forward them to your destination url.
 
 
-![hookdeck_infrastructure](../static/img/Intro/Hookdeck_Setup.png)
+![hookdeck_infrastructure](../static/img/introduction/hookdeck-setup.png)
 
 ---
 
