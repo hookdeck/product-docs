@@ -5,9 +5,9 @@ title: Destinations
 
 ## What's a Destination
 
-A [`Destination`](destinations) is used to define the URL where of your webhooks should be sent. Generally this will be labeled after the our service or a specific method on your service for exmaple: "Order Service", "Internal API" or "Update Order".
+A [`Destination`](destinations) is used to define the URL where your webhooks should be sent. Generally, this should be labeled after the service or a specific method on your service. For example, "Order Service", "Internal API" or "Update Order".
 
-Each [`Destination`](destinations) has Webhook URL which is the endpoint Hookdeck will be sending HTTP `POST` requests. The original request headers and data is preserved but Hookdeck will also append additional meta data to the request.
+Each [`Destination`](destinations) has a webhook URL which is the endpoint Hookdeck will be sending HTTP `POST` requests. The original request headers and the data are preserved. Additionally, Hookdeck will also append metadata to the request.
 
 :::note
 Be as descriptive as possible, it will help you keep track of your webhook events!
@@ -15,29 +15,29 @@ Be as descriptive as possible, it will help you keep track of your webhook event
 
 ## Receiving webhook events
 
-To receive your webhook events you will need a HTTP server listing on a given endpoint for HTTP POST request accepting `Content-Type`: `application/json`
+To receive your webhook events you will need an HTTP server listing on a given endpoint for HTTP POST request accepting `Content-Type`: `application/json`
 
 A simple NodeJS implementation using [ExpressJS](https://expressjs.com/) would be
 
 ```javascript
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-app.post('/webhooks', (req, res) => {
-  res.send('Server receive a webhook!')
-})
+app.post("/webhooks", (req, res) => {
+  res.send("Server receive a webhook!");
+});
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
 ```
 
 ### Request headers
 
-Hookdeck will preserve the original HTTP headers. However to filter out noise created by our own infrastructure some headers are filtered, the full reference list can be found here.
+Hookdeck preserves the original HTTP headers.
 
-Additionaly Hookdeck will append the following headers:
+However, we remove "noisy" headers created by our own infrastructure as well as append the following headers:
 
 ```json
 X-Hookdeck-EventID:        Hookdeck event id
@@ -47,36 +47,37 @@ X-Hookdeck-Event-URL:      URL to the Hookdeck Dashboard for that event
 
 ### Resquest body
 
-Hookdeck will preserve the original HTTP request body. However, sicne Javascript doesn't have support for 64 bit integers, very large numbers (58 bits +) will be converted to string to preserve their orginal values.
+Hookdeck preserves the original HTTP request body. However, since Javascript doesn't have support for 64-bit integers, very large numbers (58 bits +) will be converted to a string to preserve their original values.
 
 ### Responding to the event
 
-When using Hookdeck it's recommended to respond to webhook event request with a status code that reflect the actual state of your system. If the operation processed correctly ou should respond with a `2XX` response code (`200`, `201`) and a `4XX - 5XX` for errors. We recommend you return the most relevant status code to help you with troubleshooting.
+When using Hookdeck, it's recommended to respond to a webhook event request with a status code that reflects the actual state of your system. When an operation is processed, you should respond with a `2XX` response code (`200`, `201`) for successes or a `4XX - 5XX` for errors.
+We recommend you return the most relevant status code to help you with troubleshooting.
 
-Contrarely to what you might have been doing in the past, when using Hookdeck you should not simply return a HTTP 200 (success) right away and queue the event. You should take action immediately and report the result back to Hookdeck. This is what enables Hookdeck to know what events to retry and provide you with the tools to recover from errors.
+Contrary to what you might have been doing in the past, when using Hookdeck you should not simply return an HTTP 200 (success) right away and queue the event. You should take action immediately and report the result back to Hookdeck. This is what enables Hookdeck to know what events to retry as well as providing you with the tools to recover from errors.
 
-Another common practice is to abstract errors into a generic `500` fatal error. While this is done to not leak stack traces or other important information, when using Hookdeck over `HTTPS` (SSL) the more specific the error you return, the more helpful Hookdeck will be at helping you solve your errors.
+Another common practice is to abstract errors into a generic `500` fatal error. While this is done to not leak stack traces or other important information, when using Hookdeck over `HTTPS` (SSL) the more specific the error you return, the more helpful Hookdeck will be to solve your errors.
 
 Using our previous NodeJS example
 
 ```javascript
-app.post('/webhooks', (req, res) => {
+app.post("/webhooks", (req, res) => {
   try {
-    const result = doSomething(req.body)
+    const result = doSomething(req.body);
     // Webhook handled succesfully, let Hookdeck know.
     res.status(200).json(result);
   } catch (e) {
     // Oh no something went wrong, provide Hookdeck with the error.
     res.status(500).json(e);
   }
-})
+});
 ```
 
 ### Timeouts
 
-When Hookdeck delivers an event to your destination, it will wait for up to 30 seconds for a response before timing out. Attempts that timeout will be shown as `ERR` in the dashboard with the status code `TIMEOUT` and will be considered as `failed` and eligible for retry.
+When Hookdeck delivers an event to your destination, it will wait for up to 30 seconds for a response before timing out. Attempts that timeout will be shown as `ERR` in the dashboard with the status code `TIMEOUT`. They are considered as `failed` and eligible for retry.
 
-If you run into problems with the 30 seconds timeout, please reach out to us to increase it!
+If you run into problems with the 30 seconds timeout, please reach out to us, we can increase it!
 
 ## Create a Destinaton
 
@@ -90,7 +91,7 @@ A new destination can also be created when creating a new `Webhook Connection`
 
 ## Edit a Destination
 
-You can edit a [`Destination`](destinations) by selecting the the edit button from the destination card options menu:
+You can edit a [`Destination`](destinations) by selecting the edit button from the destination card options menu:
 
 ![Edit a destination](../static/img/connections/update-destination.png)
 
