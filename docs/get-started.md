@@ -1,6 +1,10 @@
 ---
 id: get-started
 title: Get Started
+description: Step by step how to set up Hookdeck.
+keywords:
+  - webhook connection
+  - webhook handling
 ---
 
 ## Sign up
@@ -25,7 +29,7 @@ Here are two ways to create a webhook connection:
 - Using the API
 
 :::note
-For our example project, we will be using the first method by leveraging the right-hand side of the screen to create  [`Source`](sources), a [`Destination`](destinations), and a ruleset.
+For our example project, we will be using the first method by leveraging the right-hand side of the screen to create [`Source`](sources), a [`Destination`](destinations), and a ruleset.
 :::
 
 The onboarding will guide you through creating your first webhook connection.
@@ -60,7 +64,6 @@ Each workspace has a Default Ruleset that's configured with sensible defaults.
 _For our example project, we will use the Default Ruleset that will retry every hour minutes up to 5 times. It will send an email alert for the last failure, with up to 1 email per hour._
 
 ![create-ruleset](../static/img/introduction/create-ruleset.png)
-
 
 ## Update the endpoint in the Source
 

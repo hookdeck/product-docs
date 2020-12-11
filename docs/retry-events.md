@@ -1,6 +1,11 @@
 ---
 id: retry-events
 title: Retry Webhook Events
+description: Webhook automatic and manual retry in Hookdeck
+keywords:
+  - webhook retry
+  - webhook automatic retry
+  - webhook retry logic
 ---
 
 ## Manual retries

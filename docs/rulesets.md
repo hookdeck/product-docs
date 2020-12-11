@@ -1,6 +1,10 @@
 ---
 id: rulesets
 title: Rulesets
+description: How to manage webhook connection rulesets in Hookdeck
+keywords:
+  - webhook retry logic
+  - webhook error alert
 ---
 
 ## What is a Ruleset?

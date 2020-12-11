@@ -1,6 +1,9 @@
 ---
 id: manage-connections
 title: Managing Connections
+description: How to manage webhook connection in Hookdeck
+keywords:
+  - webhook connection
 ---
 
 Webhook connections are used to connect a [`Source`](sources) and a [`Destination`](destinations). By creating a connection you tell Hookdeck who will be sending the webhook events and where you wish them to be sent.
@@ -27,13 +30,13 @@ Connections can be created with the **_Create_** button at the top of the page o
 
 The fields for creating a new webhook connection are:
 
-| Field         | Description                                                          | Required |
-| ------------- | -------------------------------------------------------------------- | -------- |
-| [`Source`](sources)      | You can select an already existing source or create a new one        | true     |
+| Field                         | Description                                                          | Required |
+| ----------------------------- | -------------------------------------------------------------------- | -------- |
+| [`Source`](sources)           | You can select an already existing source or create a new one        | true     |
 | [`Destination`](destinations) | You can select an already existing destination or create a new one   | true     |
-| [`Ruleset`](rulesets)     | If left empty it will default to `Default Ruleset`                   | false    |
-| Label         | If left empty it will default to `Source Label -> Destination Label` | false    |
-| Alias         | A human friendly unique ID to make API calls idempotent              | false    |
+| [`Ruleset`](rulesets)         | If left empty it will default to `Default Ruleset`                   | false    |
+| Label                         | If left empty it will default to `Source Label -> Destination Label` | false    |
+| Alias                         | A human friendly unique ID to make API calls idempotent              | false    |
 
 If your connection uses a new [`Source`](sources), you will be provided with a unique URL to copy and paste in your [`Source`](sources). Otherwise, your [`Source`](sources) has been set up, webhook events will now be sent to your configured [`Destination`](destinations).
 

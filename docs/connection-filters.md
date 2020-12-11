@@ -1,6 +1,9 @@
 ---
 id: connection-filters
 title: Filtering Webhook Events
+description: How to filter webhook events
+keywords:
+  - webhook filter
 ---
 
 Hookdeck supports filtering the webhooks events that are processed and sent to your destination. Events can be filtered using the JSON filtering syntax. Filters can be applied to both the request `Headers` and `Body`
@@ -24,7 +27,6 @@ Once you have edited your filter, you can select _Test Filter_ to test your filt
 _Example filter to receive only 'issues' webhook type from Github_
 
 ![Create or Update filters](../static/img/connections/filters-success-example.png)
-
 
 Once a filter is active, it will be shown next to the connection
 
@@ -160,7 +162,7 @@ Or even nested objects
 
 ### Operators
 
-Sometimes you need more than a simple  `equal` matching. Our syntax support different operators to allow for more complex matching strategies.
+Sometimes you need more than a simple `equal` matching. Our syntax support different operators to allow for more complex matching strategies.
 
 Operators can be used as an object instead of the matching value.
 

@@ -1,6 +1,11 @@
 ---
 id: destinations
 title: Destinations
+description: How to manage webhook destinations in Hookdeck
+keywords:
+  - webhook URL
+  - webhook endpoint
+  - hookdeck destination
 ---
 
 ## What's a Destination

@@ -1,6 +1,10 @@
 ---
 id: sources
 title: Sources
+description: How to manage webhook sources in Hoodeck
+keywords:
+  - webhook source
+  - webhook url
 ---
 
 ## What is a Source

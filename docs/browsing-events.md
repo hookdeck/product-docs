@@ -1,6 +1,7 @@
 ---
 id: browsing-event
 title: Browsing Events
+description: How to browse webhook event in Hoodeck dashboard
 ---
 
 ## Events list

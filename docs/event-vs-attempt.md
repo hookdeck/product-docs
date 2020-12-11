@@ -1,6 +1,10 @@
 ---
 id: event-vs-attempt
 title: Events & Attempts
+description: What is a webhook event and attempt in Hookdeck
+keywords:
+  - webhook event
+  - webhook attempt
 ---
 
 ## What's an event?
@@ -34,7 +38,6 @@ Alternatively, new attempts will be made over time according to your retry strat
 Each attempt also has an associated `Attempt Response` that contains the `HTTP Status` and `Body` of the server response.
 
 ![Attempts example](../static/img/events/attempts-example.png)
-
 
 ### Error codes
 

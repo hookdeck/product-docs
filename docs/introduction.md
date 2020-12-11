@@ -3,6 +3,11 @@ id: introduction
 title: Introduction
 sidebar_label: Introduction
 slug: /
+description: Hookdeck is a webhook instructure that handles the ingestion and error handling of your webhooks.
+keywords:
+  - webhook infrastructure
+  - webhook queue
+  - webhook monitoring
 ---
 
 ## What's Hookdeck?
@@ -31,14 +36,13 @@ Hookdeck works by proxying your webhooks through our own infrastructure. You can
 
 Webhook connections are defined by their [`Source`](sources), [`Destination`](destinations) and [`Ruleset`](rulesets).
 
-- A [`Source`](sources) represent an API sending you a webhook, such as Shopify, Stripe, Github, etc. Each source is assigned a unique *Webhook URL* that can be provided to the sender.
+- A [`Source`](sources) represent an API sending you a webhook, such as Shopify, Stripe, Github, etc. Each source is assigned a unique _Webhook URL_ that can be provided to the sender.
 
 - A [`Destination`](destinations) represents an endpoint on your own server. Hookdeck will be forwarding all webhooks received to that URL with an HTTP POST request containing the original data from the sender along with additional Hookdeck metadata.
 
 - A [`Ruleset`](rulesets) is a reusable component across your connection to specify what retry logic and alerting logic to apply to your webhook connection.
 
-
-Hookdeck will ingest any HTTP POST request to your [`Source`](sources) *Webhook URL*  and forward them to your destination URL.
+Hookdeck will ingest any HTTP POST request to your [`Source`](sources) _Webhook URL_ and forward them to your destination URL.
 
 ![hookdeck_infrastructure](../static/img/introduction/hookdeck-setup.png)
 
@@ -48,7 +52,7 @@ Hookdeck will ingest any HTTP POST request to your [`Source`](sources) *Webhook 
 
 ### Never miss and webhook again
 
-Hookdeck is a battle tested to handle large volume of webhooks. Reliability is our #1 priority. We protect you against spikes, outages and errors related to unexpected volume increase on your servers. 
+Hookdeck is a battle tested to handle large volume of webhooks. Reliability is our #1 priority. We protect you against spikes, outages and errors related to unexpected volume increase on your servers.
 
 ### Monitor your webhooks
 
@@ -64,7 +68,7 @@ There are many more reasons to use Hookdeck such as Event Filtering.
 
 ---
 
-## Requirement 
+## Requirement
 
 Hookdeck has no external dependencies. If your system can receive HTTP POST requests, you’re ready to go.
 

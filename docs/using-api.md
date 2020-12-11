@@ -1,6 +1,9 @@
 ---
 id: using-the-api
-title: Using the API
+title: Using The API
+description: How to use Hookdeck with the API
+keywords:
+  - hookdeck api
 ---
 
 Instead of using Hookdeck's UI, you can leverage the REST API. Everything done in the UI can be done programmatically.
