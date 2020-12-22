@@ -5,7 +5,7 @@ if (ExecutionEnvironment.canUseDOM) {
   loadCrisp();
   loadSegment();
   fetch("https://api.hookdeck.io/session/me", {
-    credentials: 'include'
+    credentials: "include",
   })
     .then((r) => r.json())
     .then((user) => {

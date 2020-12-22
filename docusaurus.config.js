@@ -9,6 +9,11 @@ module.exports = {
   projectName: "hookdeck-docs",
   themeConfig: {
     respectPrefersColorScheme: true,
+    algolia: {
+      apiKey: "92d519be349a469f21d306736880edab",
+      indexName: "hookdeck",
+      contextualSearch: false,
+    },
     navbar: {
       hideOnScroll: true,
       logo: {
