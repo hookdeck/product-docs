@@ -24,10 +24,10 @@ For each event within the Event List, you will see the `Next Attempt At` date wh
 
 ## Bulk retries
 
-Bulk retry isn't available yet via the Dashboard, it will be added in the future.
+Bulk retry isn't available yet via the Dashboard, it will be added in the near future.
 
 :::tip
-You can retry multiple events using the API, [see how!](bulk-retries).
+You can retry multiple events using the API.
 :::
 
 ## Cancel Scheduled Retry
