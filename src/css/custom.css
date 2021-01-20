@@ -89,6 +89,26 @@ hr {
   border-width: 2px;
 }
 
+.tabs {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin: 0;
+}
+
+.tabs + div {
+  margin-top: 0 !important;
+  padding: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top: unset;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tabs__item {
+  padding: 12px;
+}
+
 .alert a {
   color: var(--ifm-color-primary);
 

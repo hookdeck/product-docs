@@ -4,6 +4,9 @@ title: Browsing Events
 description: How to browse webhook event in Hoodeck dashboard
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 ## Events list
 
 The event list displays the historical record of your events in descending order. Each event can be selected to preview the event request data and response data. By default, when selecting an event, the most recent attempt is used to populate the response data. You can also select any of the other attempts.
@@ -19,11 +22,49 @@ You can filter events by:
 - **Sources**: By the source of the events.
 - **Destinations**: By the destination of the events.
 - **Date**: By a specific or interval of dates.
+- **Request**:
+  - **Body**: By partial JSON match of the request body.
+  - **Headers**: By partial JSON match of the request headers.
 
 You can sort events by:
 
 - **Created At**: The date the event was received.
 - **Last Attempt At**: The date the last attempt was made.
+
+#### Examples
+
+<Tabs
+  defaultValue="dashboard"
+  values={[
+    { label: 'Using Dashboard', value: 'dashboard', },
+    { label: 'Using API', value: 'api', },
+  ]
+}>
+<TabItem value="dashboard">
+
+*Filter by sources*
+
+![Filter by source](../static/img/events/filter-by-source.png)
+
+*Filter by request body*
+
+![Filter by body](../static/img/events/filter-by-body.png)
+
+</TabItem>
+<TabItem value="api">
+
+``` title="Filter by multiple sources"
+GET https://api.hookdeck.io/events?source_id[0]=src_xxx&source_id[1]=src_yyy
+```
+
+``` title="Filter by request body with key "hello" and value "world""
+GET https://api.hookdeck.io/events?body=%7B%20"hello"%3A%20"world"%20%7D
+```
+
+[API reference →](https://docs.hookdeck.io/#retrieve-all-events)
+
+</TabItem>
+</Tabs>
 
 ### Paging
 
