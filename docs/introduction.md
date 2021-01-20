@@ -78,7 +78,7 @@ Since Hookdeck is a hosted solution, there is no installation process. All you h
 
 ### Hookdeck UI Requirements
 
-Hookdeck Dashboard (UI) requires a modern web browser. We support the last version of all “evergreen” browsers. The term “evergreen” refers to the release strategy of frequently updating in the background. The major browsers which are covered with this are:
+Hookdeck Dashboard (UI) requires a modern web browser. We support the last version of the these popular browsers:
 
 - Chrome
 - Safari

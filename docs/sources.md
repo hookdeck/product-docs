@@ -27,6 +27,16 @@ If you encounter a problem with a specific API provider, [send us a message, we'
 Some API providers require a _validation_ step. While this is not standard across all providers we do our best to implement validation for any platforms our users integrate.
 :::
 
+### Content-Type Support
+
+Different webhook providers might send the data is different formats. The format is determined using the `Content-Type` HTTP header. Currently Hookdeck supports:
+
+- `text/plain`
+- `application/json`
+- `application/x-www-form-urlencoded`
+
+All of Hookdeck features are available for all content types. Event request will be converted and stored in `JSON` behind the scene. Your `Destination` will receive the request with the orginal content type preserved.
+
 ## Create a Source
 
 A [`Source`](sources) can be created while creating a new `Webhook Connection`

@@ -7,6 +7,9 @@ keywords:
   - webhook handling
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 ## Sign up
 
 Create your account at https://dashboard.hookdeck.io/signup
@@ -15,22 +18,22 @@ We support authentication by SSO with `Google` and `Github` along with passwordl
 
 ## Create your workspace
 
-Upon signing up you will be prompted to create your first `Deck` which is commonly referred to as `Workspace`.
+Upon signing up you will be prompted to create your first `Workspace`.
 
-Enter your Deck name and fill in the form.
+Enter your workspace name and fill in the form.
 
 ---
 
 ## Create a webhook connection
 
-Here are two ways to create a webhook connection:
-
-- Using the onboarding process (https://dashboard.hookdeck.io/onboarding)
-- Using the API
-
-:::note
-For our example project, we will be using the first method by leveraging the right-hand side of the screen to create [`Source`](sources), a [`Destination`](destinations), and a ruleset.
-:::
+<Tabs
+  defaultValue="dashboard"
+  values={[
+    { label: 'Using Dashboard', value: 'dashboard', },
+    { label: 'Using API', value: 'api', },
+  ]
+}>
+<TabItem value="dashboard">
 
 The onboarding will guide you through creating your first webhook connection.
 
@@ -64,6 +67,39 @@ Each workspace has a Default Ruleset that's configured with sensible defaults.
 _For our example project, we will use the Default Ruleset that will retry every hour minutes up to 5 times. It will send an email alert for the last failure, with up to 1 email per hour._
 
 ![create-ruleset](../static/img/introduction/create-ruleset.png)
+
+
+</TabItem>
+<TabItem value="api">
+
+You can create your first connection using the API
+
+```
+ POST https://events.hookdeck.io/webhooks
+```
+```json
+ {
+   "source": {
+     "label": "Shopify"
+   },
+   "destination": {
+     "label": "My API",
+     "url": "https://myapi.example.com/webhook"
+   }
+ }
+```
+
+```bash title="Using cURL"
+curl "POST https://api.hookdeck.io/webhooks" \
+  -H "Authorization: Basic {{ BASE64_API_TOKEN }}" \
+  -H "Content-Type: application/json"
+  --data '{"source":{"label":"Shopify"},"destination":{"label":"My API","url":"https://myapi.example.com/webhook"}}'
+```
+
+[API reference →](https://https://docs.hookdeck.io/#create-a-webhook-with-an-undefined-destination-source-and-ruleset)
+
+</TabItem>
+</Tabs>
 
 ## Update the endpoint in the Source
 
