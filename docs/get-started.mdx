@@ -29,8 +29,8 @@ Enter your workspace name and fill in the form.
 <Tabs
   defaultValue="dashboard"
   values={[
-    { label: 'Using Dashboard', value: 'dashboard', },
-    { label: 'Using API', value: 'api', },
+    { label: 'Dashboard', value: 'dashboard', },
+    { label: 'API', value: 'api', },
   ]
 }>
 <TabItem value="dashboard">
@@ -96,7 +96,7 @@ curl "POST https://api.hookdeck.io/webhooks" \
   --data '{"source":{"label":"Shopify"},"destination":{"label":"My API","url":"https://myapi.example.com/webhook"}}'
 ```
 
-[API reference →](https://https://docs.hookdeck.io/#create-a-webhook-with-an-undefined-destination-source-and-ruleset)
+[API reference →](https://docs.hookdeck.io/#create-a-connection)
 
 </TabItem>
 </Tabs>

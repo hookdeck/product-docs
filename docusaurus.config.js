@@ -19,7 +19,7 @@ module.exports = {
       logo: {
         alt: "Hookdeck Logo",
         srcDark: "img/logo-docs-light.svg",
-        src: "img/logo-docs.svg",
+        src: "img/logo-docs-dark.svg",
       },
       items: [
         {
